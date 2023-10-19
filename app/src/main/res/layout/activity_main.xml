@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextCelsius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/enter_temperature_in_celsius"/>
+
+    <EditText
+        android:id="@+id/editTextFahrenheit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/enter_temperature_in_fahrenheit"/>
+
+    <Button
+        android:id="@+id/buttonCelsiusToFahrenheit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/celsius_to_fahrenheit"/>
+
+    <Button
+        android:id="@+id/buttonFahrenheitToCelsius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fahrenheit_to_celsius"/>
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text=""
+        android:textSize="18sp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="336dp"
+        android:layout_marginTop="70dp"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+</LinearLayout>
